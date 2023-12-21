@@ -1,4 +1,4 @@
-# Enraiged Laravel
+<!-- # Enraiged Laravel
 
 > **Status:** This package is currently being tested as the framework in a small number of production projects.
 
@@ -161,4 +161,4 @@ patch -Nr - --version-control none -p0 < patches/primevue-3.40.1-ssr-ready-corre
 
 ## License
 
-Enraiged Laravel is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+Enraiged Laravel is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT). -->
