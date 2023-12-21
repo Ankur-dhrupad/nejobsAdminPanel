@@ -1,4 +1,5 @@
 <?php
+use App\Http\Controllers\JobController;
 
 use Illuminate\Support\Facades\Route;
 
@@ -17,6 +18,10 @@ Route::namespace('\App\Http\Controllers\State')
 Route::middleware(['auth', 'verified', 'enraiged'])
     ->get('/dashboard', '\App\Http\Controllers\Dashboard\Show')
     ->name('dashboard');
+
+    Route::get('/jobpost', [JobController::class, 'jobpost'])
+    ->name('jobpost')
+    ->middleware('auth');   
 
 Route::get('/', function () {
     if (auth()->check()) {
