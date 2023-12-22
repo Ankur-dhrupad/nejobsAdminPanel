@@ -178,7 +178,7 @@
               <Link
                 href="/logout"
                 class="d-flex w-100 align-items-center"
-                method="delete"
+                method="post"
               >
                 <img
                   data-src="images/icon/icon_2.svg"

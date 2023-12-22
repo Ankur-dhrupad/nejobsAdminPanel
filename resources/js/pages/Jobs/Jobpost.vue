@@ -560,10 +560,11 @@ export default {
 </script>
 <style>
 /* @import 'https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css';*/
-@import "https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css";
+/* @import "https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css";
 @import url("https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600;700&display=swap");
-@import url("https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css");
-/* @import 'https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js'; */
+@import 'https://code.jquery.com/jquery-3.6.0.min.js'; 
+@import 'https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/js/select2.min.js'; 
+@import 'https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/css/select2.min.css';   */
 
 body {
   font-family: "Gordita", "EB Garamond", sans-serif; /* Specify 'Gordita' as the preferred font, fallback to 'EB Garamond' and then generic sans-serif */

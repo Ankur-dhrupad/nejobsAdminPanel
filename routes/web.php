@@ -19,6 +19,14 @@ Route::middleware(['auth', 'verified', 'enraiged'])
     ->get('/dashboard', '\App\Http\Controllers\Dashboard\Show')
     ->name('dashboard');
 
+
+    // Route::middleware(['auth'])
+    // ->delete('/logout', '\App\Http\Controllers\Login\Destroy')
+    // ->name('logout'); 
+
+// Route::delete('logout', [AuthenticatedSessionController::class, 'destroy'])
+//     ->name('logout');
+
     Route::get('/jobpost', [JobController::class, 'jobpost'])
     ->name('jobpost')
     ->middleware('auth');   
