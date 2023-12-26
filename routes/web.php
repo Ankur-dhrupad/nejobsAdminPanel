@@ -31,6 +31,14 @@ Route::middleware(['auth', 'verified', 'enraiged'])
     ->name('jobpost')
     ->middleware('auth');   
 
+    Route::post('/jobstore', [JobController::class, 'jobstore'])
+    ->name('jobstore')
+    ->middleware('auth');
+    
+    Route::get('jobs', [JobController::class, 'index'])
+    ->name('jobs')
+    ->middleware('auth');
+
 Route::get('/', function () {
     if (auth()->check()) {
         return redirect()->route('dashboard');

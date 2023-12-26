@@ -50,11 +50,30 @@
             </button>
             <!-- <form action="#" class="search-form"> -->
             <input type="text" placeholder="Search here.." />
-            <button><img src="" data-src="images/icon/icon_10.svg" alt="" class="lazy-img m-auto" /></button>
+            <button>
+              <img
+                src=""
+                data-src="images/icon/icon_10.svg"
+                alt=""
+                class="lazy-img m-auto"
+              />
+            </button>
             <!-- </form> -->
             <div class="profile-notification ms-2 ms-md-5 me-4">
-              <button class="noti-btn dropdown-toggle" type="button" id="notification-dropdown" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">
-                <img src="" data-src="images/icon/icon_11.svg" alt="" class="lazy-img" />
+              <button
+                class="noti-btn dropdown-toggle"
+                type="button"
+                id="notification-dropdown"
+                data-bs-toggle="dropdown"
+                data-bs-auto-close="outside"
+                aria-expanded="false"
+              >
+                <img
+                  src=""
+                  data-src="images/icon/icon_11.svg"
+                  alt=""
+                  class="lazy-img"
+                />
                 <div class="badge-pill"></div>
               </button>
               <ul class="dropdown-menu" aria-labelledby="notification-dropdown">
@@ -62,21 +81,36 @@
                   <h4>Notification</h4>
                   <ul class="style-none notify-list">
                     <li class="d-flex align-items-center unread">
-                      <img src="" data-src="images/icon/icon_36.svg" alt="" class="lazy-img icon" />
+                      <img
+                        src=""
+                        data-src="images/icon/icon_36.svg"
+                        alt=""
+                        class="lazy-img icon"
+                      />
                       <div class="flex-fill ps-2">
                         <h6>You have 3 new mails</h6>
                         <span class="time">3 hours ago</span>
                       </div>
                     </li>
                     <li class="d-flex align-items-center">
-                      <img src="" data-src="images/icon/icon_37.svg" alt="" class="lazy-img icon" />
+                      <img
+                        src=""
+                        data-src="images/icon/icon_37.svg"
+                        alt=""
+                        class="lazy-img icon"
+                      />
                       <div class="flex-fill ps-2">
                         <h6>Your job post has been approved</h6>
                         <span class="time">1 day ago</span>
                       </div>
                     </li>
                     <li class="d-flex align-items-center unread">
-                      <img src="" data-src="images/icon/icon_38.svg" alt="" class="lazy-img icon" />
+                      <img
+                        src=""
+                        data-src="images/icon/icon_38.svg"
+                        alt=""
+                        class="lazy-img icon"
+                      />
                       <div class="flex-fill ps-2">
                         <h6>Your meeting is cancelled</h6>
                         <span class="time">3 days ago</span>
@@ -86,12 +120,18 @@
                 </li>
               </ul>
             </div>
-            <div><a href="employer-dashboard-submit-job.html" class="job-post-btn tran3s">Post a Job</a></div>
+            <div>
+              <a
+                href="employer-dashboard-submit-job.html"
+                class="job-post-btn tran3s"
+                >Post a Job</a
+              >
+            </div>
           </div>
         </header>
         <!-- End Header -->
 
-        <h2 class="main-title">My Jobs</h2>
+         <h2 class="main-title">My Jobs</h2>
         <form @submit.prevent="jobstore">
           <text-input v-model="form.authUserId" class="mt-10" id="authUserId" type="hidden" autofocus autocapitalize="off" />
 
@@ -147,13 +187,31 @@
       <div class="modal-dialog modal-fullscreen modal-dialog-centered">
         <div class="container">
           <div class="remove-account-popup text-center modal-content">
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            <img data-src="images/icon/icon_22.svg" alt="" class="lazy-img m-auto" />
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+            <img
+              data-src="images/icon/icon_22.svg"
+              alt=""
+              class="lazy-img m-auto"
+            />
             <h2>Are you sure?</h2>
             <p>Are you sure to delete your account? All data will be lost.</p>
-            <div class="button-group d-inline-flex justify-content-center align-items-center pt-15">
+            <div
+              class="button-group d-inline-flex justify-content-center align-items-center pt-15"
+            >
               <a href="#" class="confirm-btn fw-500 tran3s me-3">Yes</a>
-              <button type="button" class="btn-close fw-500 ms-3" data-bs-dismiss="modal" aria-label="Close">Cancel</button>
+              <button
+                type="button"
+                class="btn-close fw-500 ms-3"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              >
+                Cancel
+              </button>
             </div>
           </div>
           <!-- /.remove-account-popup -->
@@ -169,12 +227,13 @@
 </template>
 
 <script>
-import { Head, Link } from '@inertiajs/inertia-vue3'
+import { Head, Link } from '@inertiajs/inertia-vue3';
+import Layout from "@/components/Layout.vue";
 // import Icon from '@/Shared/Icon'
-import pickBy from 'lodash/pickBy'
+import pickBy from 'lodash/pickBy';
 // import Layout from '@/Shared/Layout'
-import throttle from 'lodash/throttle'
-import mapValues from 'lodash/mapValues'
+import throttle from 'lodash/throttle';
+import mapValues from 'lodash/mapValues';
 // import SearchFilter from '@/Shared/SearchFilter'
 
 export default {
@@ -184,6 +243,8 @@ export default {
     Link,
     // SearchFilter,
   },
+    layout: Layout,
+
   // layout: Layout,
   props: {
     filters: Object,
